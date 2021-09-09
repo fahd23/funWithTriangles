@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --dark-color: #000;
+    --primary-color: #BFA2DB;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    padding: 2% 5% 1.5%;
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+}
+
+#nav-title {
+    margin-left: 0;
+    text-align: left;
+}
+
+.nav-link {
+    text-align: right;
+}
+
+.list-item-inline {
+    display: inline-block;
+}
+
+a {
+    padding-left: 1rem;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--ow-color);
+    color: var(--dark-color);
+}
+
+.container {
+    margin-top: 1rem;
+    text-align: center;
+}
+#heading{
+    margin: 2.5rem 0 2rem;
+}
+
+label,
+input {
+    display: block;
+    padding: 0.75rem;
+}
+
+label {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    border-radius: 0.3rem;
+    margin: auto;
+    width: 35%;
+    margin-bottom: 1rem;
+}
+
+#submit-btn , #calculate-btn, #is-triangle-btn {
+    font-size: large;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-color: var(--dark-color);
+    border-radius: 1rem;
+}
+
+#output, #output-msg {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 501px) {
+    input {
+        width: 20%
+    }
+}
+@media(max-width:600px){
+    #nav-title{
+        padding-bottom: 1.2rem;
+    }
+}
+
+#footer {
+    width: 100%;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+}
+
+.footer-icon {
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+}

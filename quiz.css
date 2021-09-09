@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --dark-color: #000;
+    --primary-color: #BFA2DB;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    padding: 2% 5%;
+    color: var(--dark-color);
+    background-color: var(--primary-color); 
+}
+#nav-title{
+    margin-left: 0;
+    text-align: left;
+}
+.nav-link{
+    text-align: right;
+}
+.list-item-inline{
+    display: inline-block;
+}
+a{
+    padding-left: 1rem;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--ow-color);
+    color: var(--dark-color);
+}
+
+.container {
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+label {
+    padding: 0.75rem;
+}
+
+
+input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.question-container {
+    max-width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.question-container p {
+    padding-top: 1rem;
+}
+
+#check-answer-btn {
+    font-size: large;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-color: var(--dark-color);
+    border-radius: 1rem;
+}
+
+#output-msg {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+#footer {
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--dark-color);
+    background-color: var(--primary-color); 
+}
+
+.footer-icon {
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+}
+@media(max-width:600px){
+    #nav-title{
+        padding-bottom: 1.2rem;
+    }
+    .question-container {
+        max-width: 80%;
+        margin: auto;
+        text-align: left;
+    } 
+}
