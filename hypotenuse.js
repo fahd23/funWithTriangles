@@ -8,9 +8,14 @@ function calculateSumOflengths(a,b){
 }
 
 function calculateHypotenuse(){
-    const sumOfSquareOfLength = calculateSumOflengths(Number(inputs[0].value),Number(inputs[1].value));
-    const hypotenuseLength =  Math.sqrt(sumOfSquareOfLength);
-    output.innerText ="The length of Hypotenuse is "+ hypotenuseLength;
+    if(Number(inputs[0].value) > 0 && Number(inputs[1].value) > 0){
+        const sumOfSquareOfLength = calculateSumOflengths(Number(inputs[0].value),Number(inputs[1].value));
+        const hypotenuseLength =  Math.sqrt(sumOfSquareOfLength);
+        output.innerText ="The length of Hypotenuse is "+ hypotenuseLength;
+    }else{
+        output.innerText ="Enter the valid lengths";
+    }
+
 }
 
 calculateButton.addEventListener("click",calculateHypotenuse);

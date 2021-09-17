@@ -8,12 +8,17 @@ function calculateSumOfAngles(angle1, angle2, angle3){
 }
 
 function isTriangle(){
-    const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
-    if(sumOfAngles === 180){
-        output.innerText="Yay! Its form a triangle";
+    if(Number(inputs[0].value) > 0 && Number(inputs[1].value) > 0 && Number(inputs[2].value) > 0 ){
+        const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
+        if(sumOfAngles === 180){
+            output.innerText="Yay! Its form a triangle";
+        }else{
+            output.innerText="Oh oh ! Its doesnt form a triangle";
+        }
     }else{
-        output.innerText="Oh oh ! Its doesnt form a triangle";
+        output.innerText="Enter the valid angles";
     }
+
 }
 
 isTriangleBtn.addEventListener("click",isTriangle);

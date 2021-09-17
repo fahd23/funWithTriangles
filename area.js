@@ -9,8 +9,12 @@ function areaOfTriangle(base,height){
 
 
 function calculateArea(){
-    const area = areaOfTriangle(Number(inputs[0].value),Number(inputs[1].value));
-    outputMsg.innerText = "Area of Triangle is "+area;
+    if (inputs[0].value > 0 && inputs[1].value > 0 ){
+        const area = areaOfTriangle(Number(inputs[0].value),Number(inputs[1].value));
+        outputMsg.innerText = "Area of Triangle is "+area;
+    }else{
+        outputMsg.innerText = "Enter valid Numbers";
+    }
 }
 
 submitButton.addEventListener("click",calculateArea);
