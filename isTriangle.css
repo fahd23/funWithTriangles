@@ -81,8 +81,8 @@ input {
 #output, #output-msg {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 501px) {
