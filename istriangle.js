@@ -16,7 +16,7 @@ function isTriangle(){
             output.innerText="Oh oh ! Its doesnt form a triangle";
         }
     }else{
-        output.innerText="Enter the valid angles";
+        output.innerText="Please enter the valid angles";
     }
 
 }

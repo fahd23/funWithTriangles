@@ -22,14 +22,18 @@
     </nav>
     <div class="container">
         <h1>Is This A Triangle ?</h1>
+        <form onsubmit="return false">
         <label for="angle1">Enter the Angle 1:</label>
-        <input class="angle-input" type="number" placeholder="Angle 1" />
+        <input class="angle-input" type="number" placeholder="Angle 1" required />
         <label for="angle2">Enter the Angle 2:</label>
-        <input class="angle-input" type="number" placeholder="Angle 2" />
+        <input class="angle-input" type="number" placeholder="Angle 2" required/>
         <label for="angle3">Enter the Angle 3:</label>
-        <input class="angle-input" type="number" placeholder="Angle 3" />
-        <button id="is-triangle-btn">is triangle?</button>
+        <input class="angle-input" type="number" placeholder="Angle 3" required/>
+        <button id="is-triangle-btn" type="submit">is triangle?</button>
+        </form>
+        
         <div id="output-msg"></div>
+
         <footer id="footer">
             <a class="footer-icon fab fa-github-square" href="https://github.com/fahd23"></a>
             <a class="footer-icon fab fa-linkedin" href="https://www.linkedin.com/in/sn-fahd/"></a>
