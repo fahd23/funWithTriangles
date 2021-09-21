@@ -1,6 +1,5 @@
 const quizForm = document.querySelector(".quiz-form");
 const submitAnswerButton = document.querySelector("#check-answer-btn");
-// const questionContainer = document.querySelectorAll(".question-container")
 const message = document.querySelector("#output-msg");
 
 const correctAnswers = ["3","65°","Yes","right angled","90°","Yes","Scalene","Yes"];
