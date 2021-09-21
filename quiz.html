@@ -23,25 +23,25 @@
     </nav>
     <div class="container">
         <h1>Triangle Quiz</h1>
-        <form class="quiz-form">
+        <form class="quiz-form" onsubmit="return false">
             <div class="question-container">
                 <p>
                     1. How many sides does a triangle have?
                 </p>
-                <label class="quiz-label"><input class="radio-input" type="radio" value="4" name="question1" />4</label>
-                <label class="quiz-label"><input class="radio-input" type="radio" value="2" name="question1" />2</label>
-                <label class="quiz-label"><input class="radio-input" type="radio" value="3" name="question1" />3</label>
+                <label class="quiz-label"><input class="radio-input" type="radio" value="4" name="question1" required/>4</label>
+                <label class="quiz-label"><input class="radio-input" type="radio" value="2" name="question1"  required/>2</label>
+                <label class="quiz-label"><input class="radio-input" type="radio" value="3" name="question1"  required/>3</label>
             </div>
             <div class="question-container">
                 <p>
                     2. What is the third angle for the triangle where angle1=45° and angle2=70°?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="70°"
-                        name="question2" />70°</label>
-                <label class="quiz-label"><input class="radio-input" type="radio" value="60°" name="question2" />60°
+                        name="question2" required/>70°</label>
+                <label class="quiz-label"><input class="radio-input" type="radio" value="60°" name="question2" required/>60°
                 </label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="65°"
-                        name="question2" />65°</label>
+                        name="question2" required/>65°</label>
 
             </div>
             <div class="question-container">
@@ -49,62 +49,62 @@
                     3. A triangle has angles 60°, 60°, 60°. Is it an equilateral triangle?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Yes"
-                        name="question3" />Yes</label>
+                        name="question3" required/>Yes</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="No"
-                        name="question3" />No</label>
+                        name="question3" required/>No</label>
 
             </div>
             <div class="question-container">
                 <p>4. If a triangle has an angle of 90 degrees, what is it called?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="obtuse"
-                        name="question4" />obtuse</label>
+                        name="question4" required/>obtuse</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="acute"
-                        name="question4" />acute</label>
+                        name="question4" required/>acute</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="right angled"
-                        name="question4" />right
+                        name="question4" required/>right
                     angled</label>
             </div>
             <div class="question-container">
                 <p>5. If a triangle has 2 angles of 45°. What is the measure of third angle in degree?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="60°"
-                        name="question5" />60°</label>
+                        name="question5" required/>60°</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="45°"
-                        name="question5" />45°</label>
+                        name="question5" required/>45°</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="90°"
-                        name="question5" />90°</label>
+                        name="question5" required/>90°</label>
             </div>
             <div class="question-container">
                 <p>6. If a triangle has angles 135°, 15°, 30°. Is it an obtuse triangle?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Yes"
-                        name="question6" />Yes</label>
+                        name="question6" required/>Yes</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="No"
-                        name="question6" />No</label>
+                        name="question6" required/>No</label>
 
             </div>
             <div class="question-container">
                 <p>7. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Scalene"
-                        name="question7" />Scalene</label>
+                        name="question7" required/>Scalene</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Isosceles"
-                        name="question7" />Isosceles</label>
+                        name="question7" required/>Isosceles</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Equilateral"
-                        name="question7" />Equilateral</label>
+                        name="question7" required/>Equilateral</label>
             </div>
             <div class="question-container">
                 <p>8. If a triangle has angles 25°, 75°, 80°. Is it an acute angled triangle?
                 </p>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="Yes"
-                        name="question8" />Yes</label>
+                        name="question8" required/>Yes</label>
                 <label class="quiz-label"><input class="radio-input" type="radio" value="No"
-                        name="question8" />No</label>
+                        name="question8" required/>No</label>
             </div>
+            <button id="check-answer-btn" type="submit" >Submit Answers</button>
         </form>
-
-        <button id="check-answer-btn">Submit Answers</button>
+        
         <div id="output-msg"></div>
         <footer id="footer">
             <a class="footer-icon fab fa-github-square" href="https://github.com/fahd23"></a>

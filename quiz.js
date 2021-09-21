@@ -14,7 +14,7 @@ function calculateScore() {
         }
         index = index + 1;
     }
-    message.innerText = "Your Score is " + score;
+    message.innerText = `Your Score is ${score}` ;
 }
 
 submitAnswerButton.addEventListener("click", calculateScore);
